@@ -32,12 +32,12 @@
                     </a>
                 </li>
                 <li [routerLinkActive]='["link-active"]' *ngIf="!this.authService.isLoggedIn">
-                    <a href="#" (click)='login()'>
+                    <a (click)='login()'>
                         <span class='glyphicon glyphicon-user'></span> Login
                     </a>
                 </li>                
                 <li [routerLinkActive]='["link-active"]' *ngIf="this.authService.isLoggedIn">
-                    <a href="#" (click)='logout()'>
+                    <a (click)='logout()'>
                         <span class='glyphicon glyphicon-off'></span> Logout
                     </a>
                 </li>                
